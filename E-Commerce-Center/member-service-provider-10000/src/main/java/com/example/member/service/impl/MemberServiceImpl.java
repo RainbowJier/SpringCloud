@@ -47,7 +47,7 @@ public class MemberServiceImpl implements MemberService {
     }
 
     @Override
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     public ResponseResult saveMember(Member member) {
 
         LambdaQueryWrapper<Member> wrapper = new LambdaQueryWrapper<>();
