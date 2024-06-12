@@ -1,0 +1,239 @@
+2024-06-12 21:26:16.593 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> Starting MemberApplication using Java 17.0.9 with PID 15712 (D:\GithubProjects\SpringCloud\E-Commerce-Center\member-service-provider-10000\target\classes started by 30218 in D:\GithubProjects\SpringCloud)
+2024-06-12 21:26:16.602 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> No active profile set, falling back to 1 default profile: "default"
+2024-06-12 21:26:16.625 | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor >>>>> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-12 21:26:16.626 | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor >>>>> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-12 21:26:17.252 | WARN  | restartedMain | o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext >>>>> Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+2024-06-12 21:26:17.263 | INFO  | restartedMain | o.s.b.a.l.ConditionEvaluationReportLogger >>>>> 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-12 21:26:17.274 | ERROR | restartedMain | o.s.b.SpringApplication >>>>> Application run failed
+java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBeanFromAttributes(FactoryBeanRegistrySupport.java:86) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:838) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:620) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:573) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:532) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:138) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) [spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) [spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) [spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) [spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) [spring-boot-3.2.0.jar:3.2.0]
+	at com.example.member.MemberApplication.main(MemberApplication.java:10) [classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.2.0.jar:3.2.0]
+2024-06-12 21:27:08.443 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> Starting MemberApplication using Java 17.0.9 with PID 12724 (D:\GithubProjects\SpringCloud\E-Commerce-Center\member-service-provider-10000\target\classes started by 30218 in D:\GithubProjects\SpringCloud)
+2024-06-12 21:27:08.448 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> No active profile set, falling back to 1 default profile: "default"
+2024-06-12 21:27:08.468 | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor >>>>> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-12 21:27:08.468 | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor >>>>> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-12 21:27:09.202 | INFO  | restartedMain | o.s.b.w.e.t.TomcatWebServer >>>>> Tomcat initialized with port 10000 (http)
+2024-06-12 21:27:09.209 | INFO  | restartedMain | o.a.c.h.Http11NioProtocol >>>>> Initializing ProtocolHandler ["http-nio-10000"]
+2024-06-12 21:27:09.210 | INFO  | restartedMain | o.a.c.c.StandardService >>>>> Starting service [Tomcat]
+2024-06-12 21:27:09.210 | INFO  | restartedMain | o.a.c.c.StandardEngine >>>>> Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-06-12 21:27:09.240 | INFO  | restartedMain | o.a.c.c.C.[.[.[/] >>>>> Initializing Spring embedded WebApplicationContext
+2024-06-12 21:27:09.240 | INFO  | restartedMain | o.s.b.w.s.c.ServletWebServerApplicationContext >>>>> Root WebApplicationContext: initialization completed in 771 ms
+2024-06-12 21:27:09.817 | INFO  | restartedMain | o.s.b.d.a.OptionalLiveReloadServer >>>>> LiveReload server is running on port 35729
+2024-06-12 21:27:09.820 | INFO  | restartedMain | o.s.b.a.e.w.EndpointLinksResolver >>>>> Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-12 21:27:09.847 | INFO  | restartedMain | o.a.c.h.Http11NioProtocol >>>>> Starting ProtocolHandler ["http-nio-10000"]
+2024-06-12 21:27:09.850 | WARN  | restartedMain | o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext >>>>> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-06-12 21:27:09.853 | INFO  | restartedMain | c.a.d.p.DruidDataSource >>>>> {dataSource-0} closing ...
+2024-06-12 21:27:09.876 | INFO  | restartedMain | o.s.b.a.l.ConditionEvaluationReportLogger >>>>> 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-12 21:27:09.885 | ERROR | restartedMain | o.s.b.d.LoggingFailureAnalysisReporter >>>>> 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 10000 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 10000 or configure this application to listen on another port.
+
+2024-06-12 21:28:26.660 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> Starting MemberApplication using Java 17.0.9 with PID 11136 (D:\GithubProjects\SpringCloud\E-Commerce-Center\member-service-provider-10000\target\classes started by 30218 in D:\GithubProjects\SpringCloud)
+2024-06-12 21:28:26.665 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> No active profile set, falling back to 1 default profile: "default"
+2024-06-12 21:28:26.685 | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor >>>>> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-12 21:28:26.685 | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor >>>>> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-12 21:28:27.410 | INFO  | restartedMain | o.s.b.w.e.t.TomcatWebServer >>>>> Tomcat initialized with port 9191 (http)
+2024-06-12 21:28:27.417 | INFO  | restartedMain | o.a.c.h.Http11NioProtocol >>>>> Initializing ProtocolHandler ["http-nio-9191"]
+2024-06-12 21:28:27.418 | INFO  | restartedMain | o.a.c.c.StandardService >>>>> Starting service [Tomcat]
+2024-06-12 21:28:27.418 | INFO  | restartedMain | o.a.c.c.StandardEngine >>>>> Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-06-12 21:28:27.445 | INFO  | restartedMain | o.a.c.c.C.[.[.[/] >>>>> Initializing Spring embedded WebApplicationContext
+2024-06-12 21:28:27.446 | INFO  | restartedMain | o.s.b.w.s.c.ServletWebServerApplicationContext >>>>> Root WebApplicationContext: initialization completed in 760 ms
+2024-06-12 21:28:27.991 | INFO  | restartedMain | o.s.b.d.a.OptionalLiveReloadServer >>>>> LiveReload server is running on port 35729
+2024-06-12 21:28:27.993 | INFO  | restartedMain | o.s.b.a.e.w.EndpointLinksResolver >>>>> Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-12 21:28:28.020 | INFO  | restartedMain | o.a.c.h.Http11NioProtocol >>>>> Starting ProtocolHandler ["http-nio-9191"]
+2024-06-12 21:28:28.032 | INFO  | restartedMain | o.s.b.w.e.t.TomcatWebServer >>>>> Tomcat started on port 9191 (http) with context path ''
+2024-06-12 21:28:28.041 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> Started MemberApplication in 1.586 seconds (process running for 2.181)
+2024-06-12 21:28:28.496 | INFO  | RMI TCP Connection(2)-192.168.31.173 | o.a.c.c.C.[.[.[/] >>>>> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-12 21:28:28.496 | INFO  | RMI TCP Connection(2)-192.168.31.173 | o.s.w.s.DispatcherServlet >>>>> Initializing Servlet 'dispatcherServlet'
+2024-06-12 21:28:28.497 | INFO  | RMI TCP Connection(2)-192.168.31.173 | o.s.w.s.DispatcherServlet >>>>> Completed initialization in 1 ms
+2024-06-12 21:28:28.530 | INFO  | RMI TCP Connection(3)-192.168.31.173 | c.a.d.p.DruidDataSource >>>>> {dataSource-1} inited
+2024-06-12 21:29:11.608 | INFO  | http-nio-9191-exec-5 | o.s.a.AbstractOpenApiResource >>>>> Init duration for springdoc-openapi is: 81 ms
+2024-06-12 21:34:06.744 | WARN  | http-nio-9191-exec-10 | c.a.d.p.DruidAbstractDataSource >>>>> discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/e_commerce_center_db, version : 1.2.8, lastPacketReceivedIdleMillis : 338035
+2024-06-12 22:24:17.837 | INFO  | SpringApplicationShutdownHook | c.a.d.p.DruidDataSource >>>>> {dataSource-1} closing ...
+2024-06-12 22:24:17.838 | INFO  | SpringApplicationShutdownHook | c.a.d.p.DruidDataSource >>>>> {dataSource-1} closed
+2024-06-12 22:24:20.319 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> Starting MemberApplication using Java 17.0.9 with PID 13504 (D:\GithubProjects\SpringCloud\E-Commerce-Center\member-service-provider-10000\target\classes started by 30218 in D:\GithubProjects\SpringCloud)
+2024-06-12 22:24:20.323 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> No active profile set, falling back to 1 default profile: "default"
+2024-06-12 22:24:20.345 | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor >>>>> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-12 22:24:20.345 | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor >>>>> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-12 22:24:21.118 | INFO  | restartedMain | o.s.b.w.e.t.TomcatWebServer >>>>> Tomcat initialized with port 9191 (http)
+2024-06-12 22:24:21.124 | INFO  | restartedMain | o.a.c.h.Http11NioProtocol >>>>> Initializing ProtocolHandler ["http-nio-9191"]
+2024-06-12 22:24:21.125 | INFO  | restartedMain | o.a.c.c.StandardService >>>>> Starting service [Tomcat]
+2024-06-12 22:24:21.125 | INFO  | restartedMain | o.a.c.c.StandardEngine >>>>> Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-06-12 22:24:21.153 | INFO  | restartedMain | o.a.c.c.C.[.[.[/] >>>>> Initializing Spring embedded WebApplicationContext
+2024-06-12 22:24:21.153 | INFO  | restartedMain | o.s.b.w.s.c.ServletWebServerApplicationContext >>>>> Root WebApplicationContext: initialization completed in 807 ms
+2024-06-12 22:24:21.727 | INFO  | restartedMain | o.s.b.d.a.OptionalLiveReloadServer >>>>> LiveReload server is running on port 35729
+2024-06-12 22:24:21.730 | INFO  | restartedMain | o.s.b.a.e.w.EndpointLinksResolver >>>>> Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-12 22:24:21.758 | INFO  | restartedMain | o.a.c.h.Http11NioProtocol >>>>> Starting ProtocolHandler ["http-nio-9191"]
+2024-06-12 22:24:21.770 | INFO  | restartedMain | o.s.b.w.e.t.TomcatWebServer >>>>> Tomcat started on port 9191 (http) with context path ''
+2024-06-12 22:24:21.779 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> Started MemberApplication in 1.682 seconds (process running for 2.29)
+2024-06-12 22:24:22.128 | INFO  | RMI TCP Connection(1)-192.168.31.173 | o.a.c.c.C.[.[.[/] >>>>> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-12 22:24:22.128 | INFO  | RMI TCP Connection(1)-192.168.31.173 | o.s.w.s.DispatcherServlet >>>>> Initializing Servlet 'dispatcherServlet'
+2024-06-12 22:24:22.129 | INFO  | RMI TCP Connection(1)-192.168.31.173 | o.s.w.s.DispatcherServlet >>>>> Completed initialization in 1 ms
+2024-06-12 22:24:22.162 | INFO  | RMI TCP Connection(2)-192.168.31.173 | c.a.d.p.DruidDataSource >>>>> {dataSource-1} inited
+2024-06-12 22:25:22.316 | INFO  | http-nio-9191-exec-1 | o.s.a.AbstractOpenApiResource >>>>> Init duration for springdoc-openapi is: 108 ms
+2024-06-12 22:25:29.244 | WARN  | http-nio-9191-exec-8 | c.a.d.p.DruidAbstractDataSource >>>>> discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/e_commerce_center_db, version : 1.2.8, lastPacketReceivedIdleMillis : 66913
+2024-06-12 22:47:52.389 | INFO  | SpringApplicationShutdownHook | c.a.d.p.DruidDataSource >>>>> {dataSource-1} closing ...
+2024-06-12 22:47:52.392 | INFO  | SpringApplicationShutdownHook | c.a.d.p.DruidDataSource >>>>> {dataSource-1} closed
+2024-06-12 22:47:55.073 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> Starting MemberApplication using Java 17.0.9 with PID 4004 (D:\GithubProjects\SpringCloud\E-Commerce-Center\member-service-provider-10000\target\classes started by 30218 in D:\GithubProjects\SpringCloud)
+2024-06-12 22:47:55.078 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> No active profile set, falling back to 1 default profile: "default"
+2024-06-12 22:47:55.101 | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor >>>>> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-12 22:47:55.102 | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor >>>>> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-12 22:47:55.882 | INFO  | restartedMain | o.s.b.w.e.t.TomcatWebServer >>>>> Tomcat initialized with port 9191 (http)
+2024-06-12 22:47:55.888 | INFO  | restartedMain | o.a.c.h.Http11NioProtocol >>>>> Initializing ProtocolHandler ["http-nio-9191"]
+2024-06-12 22:47:55.889 | INFO  | restartedMain | o.a.c.c.StandardService >>>>> Starting service [Tomcat]
+2024-06-12 22:47:55.889 | INFO  | restartedMain | o.a.c.c.StandardEngine >>>>> Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-06-12 22:47:55.918 | INFO  | restartedMain | o.a.c.c.C.[.[.[/] >>>>> Initializing Spring embedded WebApplicationContext
+2024-06-12 22:47:55.918 | INFO  | restartedMain | o.s.b.w.s.c.ServletWebServerApplicationContext >>>>> Root WebApplicationContext: initialization completed in 816 ms
+2024-06-12 22:47:56.487 | INFO  | restartedMain | o.s.b.d.a.OptionalLiveReloadServer >>>>> LiveReload server is running on port 35729
+2024-06-12 22:47:56.489 | INFO  | restartedMain | o.s.b.a.e.w.EndpointLinksResolver >>>>> Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-12 22:47:56.517 | INFO  | restartedMain | o.a.c.h.Http11NioProtocol >>>>> Starting ProtocolHandler ["http-nio-9191"]
+2024-06-12 22:47:56.529 | INFO  | restartedMain | o.s.b.w.e.t.TomcatWebServer >>>>> Tomcat started on port 9191 (http) with context path ''
+2024-06-12 22:47:56.537 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> Started MemberApplication in 1.672 seconds (process running for 2.261)
+2024-06-12 22:47:56.907 | INFO  | RMI TCP Connection(2)-192.168.31.173 | o.a.c.c.C.[.[.[/] >>>>> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-12 22:47:56.907 | INFO  | RMI TCP Connection(2)-192.168.31.173 | o.s.w.s.DispatcherServlet >>>>> Initializing Servlet 'dispatcherServlet'
+2024-06-12 22:47:56.908 | INFO  | RMI TCP Connection(2)-192.168.31.173 | o.s.w.s.DispatcherServlet >>>>> Completed initialization in 0 ms
+2024-06-12 22:47:56.937 | INFO  | RMI TCP Connection(1)-192.168.31.173 | c.a.d.p.DruidDataSource >>>>> {dataSource-1} inited
+2024-06-12 22:48:04.118 | INFO  | http-nio-9191-exec-5 | o.s.a.AbstractOpenApiResource >>>>> Init duration for springdoc-openapi is: 99 ms
+2024-06-12 22:48:37.928 | INFO  | SpringApplicationShutdownHook | c.a.d.p.DruidDataSource >>>>> {dataSource-1} closing ...
+2024-06-12 22:48:37.931 | INFO  | SpringApplicationShutdownHook | c.a.d.p.DruidDataSource >>>>> {dataSource-1} closed
+2024-06-12 22:48:40.253 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> Starting MemberApplication using Java 17.0.9 with PID 21472 (D:\GithubProjects\SpringCloud\E-Commerce-Center\member-service-provider-10000\target\classes started by 30218 in D:\GithubProjects\SpringCloud)
+2024-06-12 22:48:40.258 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> No active profile set, falling back to 1 default profile: "default"
+2024-06-12 22:48:40.279 | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor >>>>> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-12 22:48:40.279 | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor >>>>> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-12 22:48:41.043 | INFO  | restartedMain | o.s.b.w.e.t.TomcatWebServer >>>>> Tomcat initialized with port 9191 (http)
+2024-06-12 22:48:41.049 | INFO  | restartedMain | o.a.c.h.Http11NioProtocol >>>>> Initializing ProtocolHandler ["http-nio-9191"]
+2024-06-12 22:48:41.050 | INFO  | restartedMain | o.a.c.c.StandardService >>>>> Starting service [Tomcat]
+2024-06-12 22:48:41.050 | INFO  | restartedMain | o.a.c.c.StandardEngine >>>>> Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-06-12 22:48:41.077 | INFO  | restartedMain | o.a.c.c.C.[.[.[/] >>>>> Initializing Spring embedded WebApplicationContext
+2024-06-12 22:48:41.078 | INFO  | restartedMain | o.s.b.w.s.c.ServletWebServerApplicationContext >>>>> Root WebApplicationContext: initialization completed in 798 ms
+2024-06-12 22:48:41.689 | INFO  | restartedMain | o.s.b.d.a.OptionalLiveReloadServer >>>>> LiveReload server is running on port 35729
+2024-06-12 22:48:41.691 | INFO  | restartedMain | o.s.b.a.e.w.EndpointLinksResolver >>>>> Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-12 22:48:41.719 | INFO  | restartedMain | o.a.c.h.Http11NioProtocol >>>>> Starting ProtocolHandler ["http-nio-9191"]
+2024-06-12 22:48:41.731 | INFO  | restartedMain | o.s.b.w.e.t.TomcatWebServer >>>>> Tomcat started on port 9191 (http) with context path ''
+2024-06-12 22:48:41.741 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> Started MemberApplication in 1.689 seconds (process running for 2.284)
+2024-06-12 22:48:42.089 | INFO  | RMI TCP Connection(1)-192.168.31.173 | o.a.c.c.C.[.[.[/] >>>>> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-12 22:48:42.089 | INFO  | RMI TCP Connection(1)-192.168.31.173 | o.s.w.s.DispatcherServlet >>>>> Initializing Servlet 'dispatcherServlet'
+2024-06-12 22:48:42.091 | INFO  | RMI TCP Connection(1)-192.168.31.173 | o.s.w.s.DispatcherServlet >>>>> Completed initialization in 0 ms
+2024-06-12 22:48:42.120 | INFO  | RMI TCP Connection(2)-192.168.31.173 | c.a.d.p.DruidDataSource >>>>> {dataSource-1} inited
+2024-06-12 22:49:03.686 | INFO  | SpringApplicationShutdownHook | c.a.d.p.DruidDataSource >>>>> {dataSource-1} closing ...
+2024-06-12 22:49:03.688 | INFO  | SpringApplicationShutdownHook | c.a.d.p.DruidDataSource >>>>> {dataSource-1} closed
+2024-06-12 22:49:05.948 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> Starting MemberApplication using Java 17.0.9 with PID 880 (D:\GithubProjects\SpringCloud\E-Commerce-Center\member-service-provider-10000\target\classes started by 30218 in D:\GithubProjects\SpringCloud)
+2024-06-12 22:49:05.953 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> No active profile set, falling back to 1 default profile: "default"
+2024-06-12 22:49:05.975 | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor >>>>> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-12 22:49:05.976 | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor >>>>> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-12 22:49:06.731 | INFO  | restartedMain | o.s.b.w.e.t.TomcatWebServer >>>>> Tomcat initialized with port 9191 (http)
+2024-06-12 22:49:06.736 | INFO  | restartedMain | o.a.c.h.Http11NioProtocol >>>>> Initializing ProtocolHandler ["http-nio-9191"]
+2024-06-12 22:49:06.737 | INFO  | restartedMain | o.a.c.c.StandardService >>>>> Starting service [Tomcat]
+2024-06-12 22:49:06.738 | INFO  | restartedMain | o.a.c.c.StandardEngine >>>>> Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-06-12 22:49:06.767 | INFO  | restartedMain | o.a.c.c.C.[.[.[/] >>>>> Initializing Spring embedded WebApplicationContext
+2024-06-12 22:49:06.767 | INFO  | restartedMain | o.s.b.w.s.c.ServletWebServerApplicationContext >>>>> Root WebApplicationContext: initialization completed in 791 ms
+2024-06-12 22:49:07.348 | INFO  | restartedMain | o.s.b.d.a.OptionalLiveReloadServer >>>>> LiveReload server is running on port 35729
+2024-06-12 22:49:07.351 | INFO  | restartedMain | o.s.b.a.e.w.EndpointLinksResolver >>>>> Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-12 22:49:07.380 | INFO  | restartedMain | o.a.c.h.Http11NioProtocol >>>>> Starting ProtocolHandler ["http-nio-9191"]
+2024-06-12 22:49:07.393 | INFO  | restartedMain | o.s.b.w.e.t.TomcatWebServer >>>>> Tomcat started on port 9191 (http) with context path ''
+2024-06-12 22:49:07.403 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> Started MemberApplication in 1.674 seconds (process running for 2.261)
+2024-06-12 22:49:07.784 | INFO  | RMI TCP Connection(2)-192.168.31.173 | o.a.c.c.C.[.[.[/] >>>>> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-12 22:49:07.785 | INFO  | RMI TCP Connection(2)-192.168.31.173 | o.s.w.s.DispatcherServlet >>>>> Initializing Servlet 'dispatcherServlet'
+2024-06-12 22:49:07.786 | INFO  | RMI TCP Connection(2)-192.168.31.173 | o.s.w.s.DispatcherServlet >>>>> Completed initialization in 1 ms
+2024-06-12 22:49:07.815 | INFO  | RMI TCP Connection(3)-192.168.31.173 | c.a.d.p.DruidDataSource >>>>> {dataSource-1} inited
+2024-06-12 22:49:08.493 | INFO  | http-nio-9191-exec-7 | o.s.a.AbstractOpenApiResource >>>>> Init duration for springdoc-openapi is: 91 ms
+2024-06-12 22:49:21.662 | INFO  | SpringApplicationShutdownHook | c.a.d.p.DruidDataSource >>>>> {dataSource-1} closing ...
+2024-06-12 22:49:21.664 | INFO  | SpringApplicationShutdownHook | c.a.d.p.DruidDataSource >>>>> {dataSource-1} closed
+2024-06-12 22:49:23.925 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> Starting MemberApplication using Java 17.0.9 with PID 13424 (D:\GithubProjects\SpringCloud\E-Commerce-Center\member-service-provider-10000\target\classes started by 30218 in D:\GithubProjects\SpringCloud)
+2024-06-12 22:49:23.929 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> No active profile set, falling back to 1 default profile: "default"
+2024-06-12 22:49:23.951 | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor >>>>> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-12 22:49:23.951 | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor >>>>> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-12 22:49:24.724 | INFO  | restartedMain | o.s.b.w.e.t.TomcatWebServer >>>>> Tomcat initialized with port 9191 (http)
+2024-06-12 22:49:24.731 | INFO  | restartedMain | o.a.c.h.Http11NioProtocol >>>>> Initializing ProtocolHandler ["http-nio-9191"]
+2024-06-12 22:49:24.732 | INFO  | restartedMain | o.a.c.c.StandardService >>>>> Starting service [Tomcat]
+2024-06-12 22:49:24.732 | INFO  | restartedMain | o.a.c.c.StandardEngine >>>>> Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-06-12 22:49:24.762 | INFO  | restartedMain | o.a.c.c.C.[.[.[/] >>>>> Initializing Spring embedded WebApplicationContext
+2024-06-12 22:49:24.762 | INFO  | restartedMain | o.s.b.w.s.c.ServletWebServerApplicationContext >>>>> Root WebApplicationContext: initialization completed in 811 ms
+2024-06-12 22:49:25.396 | INFO  | restartedMain | o.s.b.d.a.OptionalLiveReloadServer >>>>> LiveReload server is running on port 35729
+2024-06-12 22:49:25.398 | INFO  | restartedMain | o.s.b.a.e.w.EndpointLinksResolver >>>>> Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-12 22:49:25.431 | INFO  | restartedMain | o.a.c.h.Http11NioProtocol >>>>> Starting ProtocolHandler ["http-nio-9191"]
+2024-06-12 22:49:25.445 | INFO  | restartedMain | o.s.b.w.e.t.TomcatWebServer >>>>> Tomcat started on port 9191 (http) with context path ''
+2024-06-12 22:49:25.456 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> Started MemberApplication in 1.743 seconds (process running for 2.339)
+2024-06-12 22:49:25.774 | INFO  | RMI TCP Connection(2)-192.168.31.173 | o.a.c.c.C.[.[.[/] >>>>> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-12 22:49:25.774 | INFO  | RMI TCP Connection(2)-192.168.31.173 | o.s.w.s.DispatcherServlet >>>>> Initializing Servlet 'dispatcherServlet'
+2024-06-12 22:49:25.776 | INFO  | RMI TCP Connection(2)-192.168.31.173 | o.s.w.s.DispatcherServlet >>>>> Completed initialization in 1 ms
+2024-06-12 22:49:25.814 | INFO  | RMI TCP Connection(1)-192.168.31.173 | c.a.d.p.DruidDataSource >>>>> {dataSource-1} inited
+2024-06-12 22:49:30.354 | INFO  | http-nio-9191-exec-3 | o.s.a.AbstractOpenApiResource >>>>> Init duration for springdoc-openapi is: 93 ms
+2024-06-12 22:53:46.786 | INFO  | SpringApplicationShutdownHook | c.a.d.p.DruidDataSource >>>>> {dataSource-1} closing ...
+2024-06-12 22:53:46.788 | INFO  | SpringApplicationShutdownHook | c.a.d.p.DruidDataSource >>>>> {dataSource-1} closed
+2024-06-12 22:53:49.188 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> Starting MemberApplication using Java 17.0.9 with PID 2428 (D:\GithubProjects\SpringCloud\E-Commerce-Center\member-service-provider-10000\target\classes started by 30218 in D:\GithubProjects\SpringCloud)
+2024-06-12 22:53:49.192 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> No active profile set, falling back to 1 default profile: "default"
+2024-06-12 22:53:49.214 | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor >>>>> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-12 22:53:49.214 | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor >>>>> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-12 22:53:49.957 | INFO  | restartedMain | o.s.b.w.e.t.TomcatWebServer >>>>> Tomcat initialized with port 9191 (http)
+2024-06-12 22:53:49.963 | INFO  | restartedMain | o.a.c.h.Http11NioProtocol >>>>> Initializing ProtocolHandler ["http-nio-9191"]
+2024-06-12 22:53:49.964 | INFO  | restartedMain | o.a.c.c.StandardService >>>>> Starting service [Tomcat]
+2024-06-12 22:53:49.964 | INFO  | restartedMain | o.a.c.c.StandardEngine >>>>> Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-06-12 22:53:49.992 | INFO  | restartedMain | o.a.c.c.C.[.[.[/] >>>>> Initializing Spring embedded WebApplicationContext
+2024-06-12 22:53:49.993 | INFO  | restartedMain | o.s.b.w.s.c.ServletWebServerApplicationContext >>>>> Root WebApplicationContext: initialization completed in 779 ms
+2024-06-12 22:53:50.562 | INFO  | restartedMain | o.s.b.d.a.OptionalLiveReloadServer >>>>> LiveReload server is running on port 35729
+2024-06-12 22:53:50.565 | INFO  | restartedMain | o.s.b.a.e.w.EndpointLinksResolver >>>>> Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-12 22:53:50.592 | INFO  | restartedMain | o.a.c.h.Http11NioProtocol >>>>> Starting ProtocolHandler ["http-nio-9191"]
+2024-06-12 22:53:50.604 | INFO  | restartedMain | o.s.b.w.e.t.TomcatWebServer >>>>> Tomcat started on port 9191 (http) with context path ''
+2024-06-12 22:53:50.612 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> Started MemberApplication in 1.632 seconds (process running for 2.216)
+2024-06-12 22:53:51.029 | INFO  | RMI TCP Connection(2)-192.168.31.173 | o.a.c.c.C.[.[.[/] >>>>> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-12 22:53:51.029 | INFO  | RMI TCP Connection(2)-192.168.31.173 | o.s.w.s.DispatcherServlet >>>>> Initializing Servlet 'dispatcherServlet'
+2024-06-12 22:53:51.030 | INFO  | RMI TCP Connection(2)-192.168.31.173 | o.s.w.s.DispatcherServlet >>>>> Completed initialization in 1 ms
+2024-06-12 22:53:51.061 | INFO  | RMI TCP Connection(1)-192.168.31.173 | c.a.d.p.DruidDataSource >>>>> {dataSource-1} inited
+2024-06-12 22:53:55.450 | INFO  | http-nio-9191-exec-2 | o.s.a.AbstractOpenApiResource >>>>> Init duration for springdoc-openapi is: 92 ms
+2024-06-12 22:55:21.346 | INFO  | SpringApplicationShutdownHook | c.a.d.p.DruidDataSource >>>>> {dataSource-1} closing ...
+2024-06-12 22:55:21.348 | INFO  | SpringApplicationShutdownHook | c.a.d.p.DruidDataSource >>>>> {dataSource-1} closed
+2024-06-12 22:55:23.766 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> Starting MemberApplication using Java 17.0.9 with PID 12860 (D:\GithubProjects\SpringCloud\E-Commerce-Center\member-service-provider-10000\target\classes started by 30218 in D:\GithubProjects\SpringCloud)
+2024-06-12 22:55:23.770 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> No active profile set, falling back to 1 default profile: "default"
+2024-06-12 22:55:23.791 | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor >>>>> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-12 22:55:23.791 | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor >>>>> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-12 22:55:24.548 | INFO  | restartedMain | o.s.b.w.e.t.TomcatWebServer >>>>> Tomcat initialized with port 9191 (http)
+2024-06-12 22:55:24.555 | INFO  | restartedMain | o.a.c.h.Http11NioProtocol >>>>> Initializing ProtocolHandler ["http-nio-9191"]
+2024-06-12 22:55:24.556 | INFO  | restartedMain | o.a.c.c.StandardService >>>>> Starting service [Tomcat]
+2024-06-12 22:55:24.556 | INFO  | restartedMain | o.a.c.c.StandardEngine >>>>> Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-06-12 22:55:24.585 | INFO  | restartedMain | o.a.c.c.C.[.[.[/] >>>>> Initializing Spring embedded WebApplicationContext
+2024-06-12 22:55:24.585 | INFO  | restartedMain | o.s.b.w.s.c.ServletWebServerApplicationContext >>>>> Root WebApplicationContext: initialization completed in 794 ms
+2024-06-12 22:55:25.169 | INFO  | restartedMain | o.s.b.d.a.OptionalLiveReloadServer >>>>> LiveReload server is running on port 35729
+2024-06-12 22:55:25.171 | INFO  | restartedMain | o.s.b.a.e.w.EndpointLinksResolver >>>>> Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-12 22:55:25.198 | INFO  | restartedMain | o.a.c.h.Http11NioProtocol >>>>> Starting ProtocolHandler ["http-nio-9191"]
+2024-06-12 22:55:25.210 | INFO  | restartedMain | o.s.b.w.e.t.TomcatWebServer >>>>> Tomcat started on port 9191 (http) with context path ''
+2024-06-12 22:55:25.219 | INFO  | restartedMain | c.e.m.MemberApplication >>>>> Started MemberApplication in 1.659 seconds (process running for 2.262)
+2024-06-12 22:55:25.596 | INFO  | RMI TCP Connection(2)-192.168.31.173 | o.a.c.c.C.[.[.[/] >>>>> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-12 22:55:25.597 | INFO  | RMI TCP Connection(2)-192.168.31.173 | o.s.w.s.DispatcherServlet >>>>> Initializing Servlet 'dispatcherServlet'
+2024-06-12 22:55:25.599 | INFO  | RMI TCP Connection(2)-192.168.31.173 | o.s.w.s.DispatcherServlet >>>>> Completed initialization in 1 ms
+2024-06-12 22:55:25.633 | INFO  | RMI TCP Connection(1)-192.168.31.173 | c.a.d.p.DruidDataSource >>>>> {dataSource-1} inited
+2024-06-12 22:56:45.192 | WARN  | http-nio-9191-exec-3 | c.a.d.p.DruidAbstractDataSource >>>>> discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/e_commerce_center_db, version : 1.2.8, lastPacketReceivedIdleMillis : 75239
+2024-06-12 22:56:55.665 | INFO  | SpringApplicationShutdownHook | c.a.d.p.DruidDataSource >>>>> {dataSource-1} closing ...
+2024-06-12 22:56:55.667 | INFO  | SpringApplicationShutdownHook | c.a.d.p.DruidDataSource >>>>> {dataSource-1} closed

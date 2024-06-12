@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 本工程信息 -->
+    <groupId>com.example</groupId>
+    <artifactId>E-Commerce-Center</artifactId>
+    <!-- 表明本工程是一个父工程-->
+    <packaging>pom</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>E-Commerce-Center</name>
+    <description>E-Commerce-Center</description>
+
+    <!-- child modules 子模块定义 -->
+    <modules>
+        <module>other</module>
+        <module>member-service-provider-10000</module>
+    </modules>
+
+    <!-- 版本属性 -->
+    <properties>
+        <spring-boot.version>3.2.0</spring-boot.version> <!-- Spring Boot 版本 -->
+        <springboot-devtools.version>3.1.1</springboot-devtools.version> <!-- Spring Boot DevTools 版本 -->
+        <junit.version>4.12</junit.version> <!-- JUnit 版本 -->
+        <mybatis-plus.version>3.5.5</mybatis-plus.version> <!-- MyBatis Plus 版本 -->
+        <mysql.version>8.0.30</mysql.version> <!-- MySQL 版本 -->
+        <lombok.version>1.18.28</lombok.version> <!-- Lombok 版本 -->
+        <druid.version>1.2.8</druid.version> <!-- Druid 版本 -->
+        <fastjson.version>[1.2.78,)</fastjson.version> <!-- FastJSON 版本 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>   <!-- 编码 -->
+        <hutool.version>5.8.27</hutool.version>
+        <swagger.version>3.0.0</swagger.version>
+        <!-- 指定jdk版本   -->
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <java.version>17</java.version>
+    </properties>
+
+    <!--  dependencyManagement just are declared, not introduced.-->
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- SpringCloud-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>2023.0.0</version>
+                <!--
+                    type = pom and scope = import indicating that the child modules locks the version, when introducing the springboot dependencies.
+                -->
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- SpringCloud Alibaba-->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2022.0.0.0-RC2</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!--  SpringBoot -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <!-- hutool  -->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+
+            <!-- swagger -->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+                <version>4.5.0</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-boot-starter</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+
+
+            <!-- MySQL 连接驱动 -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+
+            <!-- Druid 数据库连接池 -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
+            <!-- 引入 Lombok：简化 Java 开发中的代码 -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
+            <!-- FastJSON：用于快速处理 JSON 数据 -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

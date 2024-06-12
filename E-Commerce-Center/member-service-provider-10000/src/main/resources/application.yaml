@@ -1,0 +1,50 @@
+server:
+  port: 9191
+
+spring:
+  application:
+    name: member-service-provider-10000
+
+  #  data
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/e_commerce_center_db
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+
+  #Swagger
+  # After Springboot 2.6 version, you need to configure ant_path_matcher to make swagger work properly(适当地).
+  # address: http://localhost:10000/swagger-ui/index.html
+  mvc:
+    path match:
+      matching-strategy: ant_path_matcher
+
+#logging format
+logging:
+  config: classpath:log4j2.xml   # Specify the configuration file location for log4j2.
+  level:
+    com.example.myapp: DEBUG     # Set the log level of com.example.myapp package to DEBUG.
+  pattern:
+    dateformat: HH:mm:ss
+
+#MybatisPlus
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true  # map underscore
+    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler   # EnumHandler
+  global-config:
+    db-config:
+      id-type: auto  # Global id, if variable id don't have @TableId.
+      update-strategy: not_null # Just update not null value.
+      # Logic Delete
+      logic-delete-field: deleted  # Globally Logic deletion
+      logic-delete-value: 1      # Deleted value is 1
+      logic-not-delete-value: 0   # Not deleted value is 0
+
+# knife4j
+# address: http://localhost:9191/doc.html
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
