@@ -1,7 +1,7 @@
 package com.example.member.service;
 
+import com.example.member.domain.ResponseResult;
 import com.example.member.domain.entity.Member;
-import com.example.member.domain.entity.ResponseResult;
 import org.springframework.stereotype.Service;
 
 /**
@@ -18,4 +18,6 @@ public interface MemberService {
     ResponseResult memberQuery();
 
     ResponseResult saveMember(Member member);
+
+    ResponseResult getMemberById(Long id);
 }

@@ -1,8 +1,8 @@
 package com.example.member.controller;
 
 
+import com.example.member.domain.ResponseResult;
 import com.example.member.domain.entity.Member;
-import com.example.member.domain.entity.ResponseResult;
 import com.example.member.domain.po.MemberPo;
 import com.example.member.service.MemberService;
 import com.example.member.utils.BeanCopyUtils;
@@ -23,17 +23,25 @@ public class MemberController {
     private MemberService memberService;
 
     @ApiOperation("Get all member Controller")
-    @GetMapping("/get")
+    @GetMapping("/getAllMember")
     public ResponseResult memberQuery() {
         return memberService.memberQuery();
     }
 
     @ApiOperation("Add a new member Controller")
-    @PostMapping("/save")
+    @PostMapping("/saveMember")
     public ResponseResult saveMember(@RequestBody MemberPo memberPo) {
         Member member = BeanCopyUtils.copyBean(memberPo, Member.class);
         return memberService.saveMember(member);
     }
+
+    // example-object?name=John&age=30
+    @ApiOperation("Get member By Id.")
+    @GetMapping("/getMemberById")
+    public ResponseResult getMemberById(@RequestParam(value = "id") Long id) {
+        return memberService.getMemberById(id);
+    }
+
 }
 
 

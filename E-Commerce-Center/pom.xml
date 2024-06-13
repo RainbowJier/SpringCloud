@@ -20,6 +20,7 @@
 
     <!-- 版本属性 -->
     <properties>
+        <jwt.version>0.9.0</jwt.version>
         <spring-boot.version>3.2.0</spring-boot.version> <!-- Spring Boot 版本 -->
         <springboot-devtools.version>3.1.1</springboot-devtools.version> <!-- Spring Boot DevTools 版本 -->
         <junit.version>4.12</junit.version> <!-- JUnit 版本 -->
@@ -70,7 +71,13 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            
+            <!--jwt依赖-->
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jwt.version}</version>
+            </dependency>
+            <!--            Mybatis Plus-->
             <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-spring-boot3-starter</artifactId>

@@ -42,6 +42,13 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
+
+        <!--  JWT：用于生成token，，用户校验 -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+        </dependency>
+        
         <!-- MyBatis Plus Starter：用于简化 MyBatis 的使用 -->
         <dependency>
             <groupId>com.baomidou</groupId>

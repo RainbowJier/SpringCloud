@@ -15,7 +15,7 @@ spring:
 
   #Swagger
   # After Springboot 2.6 version, you need to configure ant_path_matcher to make swagger work properly(适当地).
-  # address: http://localhost:10000/swagger-ui/index.html
+  # address: http://localhost:9191/swagger-ui/index.html
   mvc:
     path match:
       matching-strategy: ant_path_matcher
