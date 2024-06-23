@@ -65,7 +65,7 @@
     <inspection_tool class="AlibabaUseQuietReferenceNotation" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="AlibabaUseRightCaseForDateFormat" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="JavadocDeclaration" enabled="true" level="WARNING" enabled_by_default="true">
-      <option name="ADDITIONAL_TAGS" value="Description:解决跨域请求问题,Author:Rainbow,CreateTime:2023/12/816:22" />
+      <option name="ADDITIONAL_TAGS" value="Description:解决跨域请求问题,Author:Rainbow,CreateTime:2023/12/816:22,Description：配置RestTemplate,Author：,Data：" />
     </inspection_tool>
     <inspection_tool class="MapOrSetKeyShouldOverrideHashCodeEquals" enabled="true" level="WARNING" enabled_by_default="true" />
   </profile>

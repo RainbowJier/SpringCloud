@@ -1,5 +1,5 @@
 server:
-  port: 9191
+  port: 81
 
 spring:
   application:
@@ -20,19 +20,11 @@ spring:
     path match:
       matching-strategy: ant_path_matcher
 
-#logging format
-logging:
-  config: classpath:log4j2.xml   # Specify the configuration file location for log4j2.
-  level:
-    com.example.myapp: DEBUG     # Set the log level of com.example.myapp package to DEBUG.
-  pattern:
-    dateformat: HH:mm:ss
-
 #MybatisPlus
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true  # map underscore
-    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler   # EnumHandler
+  #    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler   # EnumHandler
   global-config:
     db-config:
       id-type: auto  # Global id, if variable id don't have @TableId.
@@ -48,3 +40,23 @@ knife4j:
   enable: true
   setting:
     language: zh_cn
+
+#Eureka Client
+eureka:
+  client:
+    # The default value is true, which means that the client will register with the eureka server.
+    register-with-eureka: true
+    # Get the service list from the eureka server.
+    # If the server is cluster mode, must configure the value with true.
+    fetch-registry: true
+    # Register self to eureka server.
+    service-url:
+      defaultZone: http://eureka9001.com:9001/eureka/,http://eureka9002.com:9002/eureka/
+
+
+
+
+
+
+
+

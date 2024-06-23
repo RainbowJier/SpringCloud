@@ -14,42 +14,39 @@
 
     <!-- child modules 子模块定义 -->
     <modules>
-        <module>other</module>
+        <module>member-service-consumer-80</module>
         <module>member-service-provider-10000</module>
+        <module>eureka-server-9001</module>
+        <module>eureka-server-9002</module>
     </modules>
 
     <!-- 版本属性 -->
     <properties>
         <jwt.version>0.9.0</jwt.version>
-        <spring-boot.version>3.2.0</spring-boot.version> <!-- Spring Boot 版本 -->
-        <springboot-devtools.version>3.1.1</springboot-devtools.version> <!-- Spring Boot DevTools 版本 -->
-        <junit.version>4.12</junit.version> <!-- JUnit 版本 -->
-        <mybatis-plus.version>3.5.5</mybatis-plus.version> <!-- MyBatis Plus 版本 -->
-        <mysql.version>8.0.30</mysql.version> <!-- MySQL 版本 -->
-        <lombok.version>1.18.28</lombok.version> <!-- Lombok 版本 -->
-        <druid.version>1.2.8</druid.version> <!-- Druid 版本 -->
-        <fastjson.version>[1.2.78,)</fastjson.version> <!-- FastJSON 版本 -->
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>   <!-- 编码 -->
-        <hutool.version>5.8.27</hutool.version>
-        <swagger.version>3.0.0</swagger.version>
-        <!-- 指定jdk版本   -->
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <java.version>17</java.version>
+        <spring-boot.version>2.5.0</spring-boot.version>
+        <spring-dev.version>2.5.0</spring-dev.version>
+        <fastjson.version>1.2.79</fastjson.version>
+        <hutool.version>5.8.27</hutool.version>    <!-- hutool-->
+        <knife4j-openapi3.version>4.4.0</knife4j-openapi3.version>
+        <springboot-devtools.version>3.1.1</springboot-devtools.version> <!-- Spring Boot DevTools -->
+        <junit.version>4.12</junit.version> <!-- JUnit  -->
+        <mybatis-plus.version>3.5.7</mybatis-plus.version> <!-- MyBatis Plus  -->
+        <mysql.version>8.0.30</mysql.version> <!-- MySQL  -->
+        <lombok.version>1.18.28</lombok.version> <!-- Lombok -->
+        <druid.version>1.2.8</druid.version> <!-- Druid -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>   <!-- encoding -->
+        <!-- JDK Version   -->
+        <java.version>1.8</java.version>
     </properties>
 
     <!--  dependencyManagement just are declared, not introduced.-->
     <dependencyManagement>
         <dependencies>
-
             <!-- SpringCloud-->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>2023.0.0</version>
-                <!--
-                    type = pom and scope = import indicating that the child modules locks the version, when introducing the springboot dependencies.
-                -->
+                <version>2020.0.5</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -58,7 +55,7 @@
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-                <version>2022.0.0.0-RC2</version>
+                <version>2021.1</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -80,7 +77,7 @@
             <!--            Mybatis Plus-->
             <dependency>
                 <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus.version}</version>
             </dependency>
 
@@ -94,15 +91,9 @@
             <!-- swagger -->
             <dependency>
                 <groupId>com.github.xiaoymin</groupId>
-                <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
-                <version>4.5.0</version>
+                <artifactId>knife4j-openapi2-spring-boot-starter</artifactId>
+                <version>${knife4j-openapi3.version}</version>
             </dependency>
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-boot-starter</artifactId>
-                <version>${swagger.version}</version>
-            </dependency>
-
 
             <!-- MySQL 连接驱动 -->
             <dependency>
