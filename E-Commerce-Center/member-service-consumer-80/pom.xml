@@ -11,10 +11,10 @@
     </parent>
 
     <!--  information about the project -->
-    <artifactId>member-service-provider-10000</artifactId>
+    <artifactId>member-service-consumer-80</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>member-service-provider-10000</name>
-    <description>member-service-provider-10000</description>
+    <name>member-service-consumer-80</name>
+    <description>member-service-consumer-80</description>
 
     <dependencies>
         <!-- 从公共模块中引入依赖 -->
@@ -58,11 +58,6 @@
             <artifactId>jjwt</artifactId>
         </dependency>
 
-        <!-- MyBatis Plus Starter：用于简化 MyBatis 的使用 -->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-        </dependency>
         <!--        log-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -79,18 +74,6 @@
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
             <artifactId>knife4j-openapi2-spring-boot-starter</artifactId>
-        </dependency>
-
-        <!-- MySQL 连接驱动 -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-
-        <!-- Druid 数据库连接池 -->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
         </dependency>
 
         <!-- 引入 Lombok：简化 Java 开发中的代码 -->

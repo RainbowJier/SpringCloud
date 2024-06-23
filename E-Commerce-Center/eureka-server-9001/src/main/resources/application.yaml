@@ -1,0 +1,21 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: eureka-server-9001
+
+# Client Web Access Address: http://localhost:9001/
+eureka:
+  instance:
+    hostname: localhost   # 服务实例名
+  client:
+    # 不用注册未eureka服务
+    register-with-eureka: false
+    # 表示自己就是注册中心，作用是维护注册服务实例，不需要检索服务。
+    fetch-registry: false
+  service-url:
+    #  设置 eureka server 交换模块，查询服务和注册服务都需要依赖这个地址。
+    defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+

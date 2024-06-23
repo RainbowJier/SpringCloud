@@ -2,7 +2,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
         <groupId>com.example</groupId>
         <artifactId>E-Commerce-Center</artifactId>
@@ -10,11 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <!--  information about the project -->
-    <artifactId>member-service-provider-10000</artifactId>
+    <artifactId>eureka-server-9001</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>member-service-provider-10000</name>
-    <description>member-service-provider-10000</description>
+    <name>eureka-server-9001</name>
+    <description>eureka-server-9001</description>
+
 
     <dependencies>
         <!-- 从公共模块中引入依赖 -->
@@ -23,11 +22,12 @@
             <artifactId>E-Commerce-Center</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-        <!--        SpringCloud-Eureka-Client-->
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
+
         <!--        SpringBoot-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -50,18 +50,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
-
-
-        <!--  JWT：用于生成token，，用户校验 -->
+        <!-- 测试 -->
         <dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt</artifactId>
-        </dependency>
-
-        <!-- MyBatis Plus Starter：用于简化 MyBatis 的使用 -->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
         <!--        log-->
         <dependency>
@@ -69,28 +62,10 @@
             <artifactId>spring-boot-starter-log4j2</artifactId>
         </dependency>
 
-        <!-- hutool  -->
-        <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
-        </dependency>
-
         <!-- swagger3 -->
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
             <artifactId>knife4j-openapi2-spring-boot-starter</artifactId>
-        </dependency>
-
-        <!-- MySQL 连接驱动 -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-
-        <!-- Druid 数据库连接池 -->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
         </dependency>
 
         <!-- 引入 Lombok：简化 Java 开发中的代码 -->
@@ -105,12 +80,6 @@
             <artifactId>fastjson</artifactId>
         </dependency>
 
-        <!-- 测试 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
@@ -127,4 +96,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

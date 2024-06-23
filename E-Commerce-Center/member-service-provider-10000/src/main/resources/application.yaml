@@ -1,5 +1,5 @@
 server:
-  port: 9191
+  port: 10000
 
 spring:
   application:
@@ -19,14 +19,6 @@ spring:
   mvc:
     path match:
       matching-strategy: ant_path_matcher
-
-#logging format
-logging:
-  config: classpath:log4j2.xml   # Specify the configuration file location for log4j2.
-  level:
-    com.example.myapp: DEBUG     # Set the log level of com.example.myapp package to DEBUG.
-  pattern:
-    dateformat: HH:mm:ss
 
 #MybatisPlus
 mybatis-plus:
@@ -48,3 +40,23 @@ knife4j:
   enable: true
   setting:
     language: zh_cn
+
+#Eureka Client
+eureka:
+  client:
+    # The default value is true, which means that the client will register with the eureka server.
+    register-with-eureka: true
+    # Get the service list from the eureka server.
+    # If the server is cluster mode, must configure the value with true.
+    fetch-registry: true
+    # Register self to eureka server.
+    service-url:
+      defaultZone: http://localhost:9001/eureka/
+
+
+
+
+
+
+
+
