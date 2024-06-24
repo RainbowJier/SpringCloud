@@ -10,7 +10,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.List;
 
 @SpringBootTest
+<<<<<<<< HEAD:E-Commerce-Center/member-service-provider-10000/src/test/java/com/example/member/MemberServiceProvider10000ApplicationTests.java
 class MemberServiceProvider10000ApplicationTests {
+========
+class Member10000ApplicationTests {
+>>>>>>>> origin/main:E-Commerce-Center/member-service-provider-10000/src/test/java/com/example/member/Member10000ApplicationTests.java
 
     @Autowired
     private MemberMapper memberMapper;
