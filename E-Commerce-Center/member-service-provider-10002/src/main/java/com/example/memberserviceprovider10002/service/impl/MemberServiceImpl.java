@@ -37,7 +37,7 @@ public class MemberServiceImpl implements MemberService {
             List<MemberVo> memberVos = BeanUtil.copyToList(members, MemberVo.class);
 
             // Encapsulate response result.
-            return ResponseResult.ok(memberVos);
+            return ResponseResult.ok("member-service-provider-10002", memberVos);
         } catch (Exception e) {
             return new ResponseResult<>(500, "ERROR", null);
         }

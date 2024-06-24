@@ -11,12 +11,18 @@
     </parent>
 
     <!--  information about the project -->
-    <artifactId>member-service-consumer-80</artifactId>
+    <artifactId>member-service-provider-10002</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>member-service-consumer-80</name>
-    <description>member-service-consumer-80</description>
+    <name>member-service-provider-10002</name>
+    <description>member-service-provider-10002</description>
 
     <dependencies>
+        <!-- 从公共模块中引入依赖 -->
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>E-Commerce-Center</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <!--        SpringCloud-Eureka-Client-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -52,6 +58,11 @@
             <artifactId>jjwt</artifactId>
         </dependency>
 
+        <!-- MyBatis Plus Starter：用于简化 MyBatis 的使用 -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
         <!--        log-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -68,6 +79,18 @@
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
             <artifactId>knife4j-openapi2-spring-boot-starter</artifactId>
+        </dependency>
+
+        <!-- MySQL 连接驱动 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <!-- Druid 数据库连接池 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
         </dependency>
 
         <!-- 引入 Lombok：简化 Java 开发中的代码 -->

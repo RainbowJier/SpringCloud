@@ -26,6 +26,7 @@
       <module name="eureka-server-9002" options="" />
       <module name="member-service-consumer-80" options="" />
       <module name="member-service-provider-10000" options="" />
+      <module name="member-service-provider-10002" options="" />
       <module name="other" options="" />
     </option>
   </component>

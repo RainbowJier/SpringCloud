@@ -33,6 +33,7 @@ public class MemberController {
     private RestTemplate restTemplate;
 
     // DiscoveryClient
+    @Autowired
     private DiscoveryClient discoveryClient;
 
     @GetMapping("/discoveryClient")
