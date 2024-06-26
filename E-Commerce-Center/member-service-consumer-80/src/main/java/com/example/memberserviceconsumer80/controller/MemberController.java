@@ -59,9 +59,8 @@ public class MemberController {
     @ApiOperation("Get all member Controller")
     @GetMapping("/getAllMember")
     @Systemlog(businessName = "getAllMember")
-
     public ResponseResult memberQuery() {
-        ResponseResult responseResult = restTemplate.getForObject(MEMBER_SERVICE_PROVIDER_URL + "/member/getAllMember", ResponseResult.class);
+        ResponseResult responseResult = restTemplate.getForObject(MEMBER_SERVICE_PROVIDER_URL + "/member/provider/getAllMember", ResponseResult.class);
 
         return responseResult;
     }
@@ -70,7 +69,7 @@ public class MemberController {
     @PostMapping("/saveMember")
     @Systemlog(businessName = "saveMember")
     public ResponseResult saveMember(@RequestBody Member member) {
-        ResponseResult responseResult = restTemplate.postForEntity(MEMBER_SERVICE_PROVIDER_URL + "/member/saveMember", member, ResponseResult.class).getBody();
+        ResponseResult responseResult = restTemplate.postForEntity(MEMBER_SERVICE_PROVIDER_URL + "/member/provider/saveMember", member, ResponseResult.class).getBody();
         return responseResult;
     }
 
@@ -79,7 +78,7 @@ public class MemberController {
     @GetMapping("/get/{id}")
     @Systemlog(businessName = "Get Member By Id")
     public ResponseResult getMemberById(@PathVariable(value = "id") Long id) {
-        ResponseResult responseResult = restTemplate.getForObject(MEMBER_SERVICE_PROVIDER_URL + "/member/get/" + id, ResponseResult.class);
+        ResponseResult responseResult = restTemplate.getForObject(MEMBER_SERVICE_PROVIDER_URL + "/member/provider/get/" + id, ResponseResult.class);
         return responseResult;
     }
 }

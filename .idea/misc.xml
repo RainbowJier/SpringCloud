@@ -11,20 +11,15 @@
         <option value="$PROJECT_DIR$/E-Commerce-Center/member-service-consumer-80/pom.xml" />
         <option value="$PROJECT_DIR$/E-Commerce-Center/eruek-server-9001/pom.xml" />
         <option value="$PROJECT_DIR$/E-Commerce-Center/eureka-server-9002/pom.xml" />
-        <option value="$PROJECT_DIR$/E-Commerce-Center/member-service-provider-10002/pom.xml" />
+        <option value="$PROJECT_DIR$/E-Commerce-Center/member-opfeign-consumer-80/pom.xml" />
+        <option value="$PROJECT_DIR$/E-Commerce-Center/member-openfeign-consumer-80/pom.xml" />
       </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/E-Commerce-Center/other/pom.xml" />
-        <option value="$PROJECT_DIR$/demo/pom.xml" />
-      </set>
     </option>
   </component>
   <component name="PWA">
     <option name="wasEnabledAtLeastOnce" value="true" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="corretto-1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

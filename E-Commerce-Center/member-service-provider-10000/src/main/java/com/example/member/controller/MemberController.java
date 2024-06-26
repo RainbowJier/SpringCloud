@@ -16,15 +16,15 @@ import org.springframework.web.bind.annotation.*;
  * @since 2024-06-11
  */
 @Api(tags = "Member Controller")
-@RestController
-@RequestMapping("/member")
 @Slf4j
+@RestController
+@RequestMapping("/member/provider")
 public class MemberController {
     @Autowired
     private MemberService memberService;
 
-    @ApiOperation("Get all member Controller")
     @GetMapping("/getAllMember")
+    @ApiOperation("Get all member Controller")
     @Systemlog(businessName = "getAllMember")
     public ResponseResult memberQuery() {
         return memberService.memberQuery();

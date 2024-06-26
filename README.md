@@ -4,5 +4,19 @@
 |-------------|----------------|------------|--------------|-----------|---------|---------|
 | ✔️Nacos     | ✔️Ribbon       | ✔️Sentinel | ✔️Open Feign | ✔️Gateway | ✔️Nacos | ✔️Nacos |
 | ✔️Zookeeper | ✔️LoadBalancer | ❌Hystrix   | ❌Feign       | ❌Zuul     | ❌Config | ❌Bus    |
-| ❌Erueka     |                |            |              |           |         |         |
+| ❌Eureka     |                |            |              |           |         |         |
 | ❌Consul     |                |            |              |           |         |         |
+
+
+## ✨New Features
+
+| Date       | Tasks                                              |
+|------------|----------------------------------------------------|
+| 2024-06-26 | ✅ 添加 OpenFeign Consumer 模块 <br> ✅ 成功调用 Provider 接口 |
+| 2024-06-27 | <br>                                               |
+
+### 🎈Todo List
+- [ ] OpenFeign 日志配置
+- [ ] GateWay
+- [ ] Nacos
+- [ ] Sentinel

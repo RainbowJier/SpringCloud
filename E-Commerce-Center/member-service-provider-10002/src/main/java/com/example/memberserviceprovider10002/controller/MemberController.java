@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @Api(tags = "Member Controller")
 @RestController
-@RequestMapping("/member")
+@RequestMapping("/member/provider")
 @Slf4j
 public class MemberController {
     @Autowired

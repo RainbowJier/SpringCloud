@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * @Description：配置RestTemplate
+ * @Description：配置RestTemplate负载均衡算法
  * @Author： RainbowJier
  * @Data： 2024/6/23 11:08
  */
@@ -14,8 +14,7 @@ import org.springframework.web.client.RestTemplate;
 public class CustomizationBean {
 
     @Bean
-    // 轮询算法调用远程接口
-    @LoadBalanced
+    @LoadBalanced  // 默认为轮询算法
     public RestTemplate getRestTemplate() {
         return new RestTemplate();
     }
