@@ -22,3 +22,16 @@ eureka:
     # Register self to eureka server cluster.
     service-url:
       defaultZone: http://eureka9001.com:9001/eureka/,http://eureka9002.com:9002/eureka/
+
+
+# 日志
+logging:
+  level:
+    #对MemberFeignService 接口调用过程 打印的日志信息-debug级别
+    com.example.memberopenfeignconsumer80.service.MemberFeignService: debug
+
+ribbon:
+  #指的是建立连接后从服务器读取到可用资源所用的时间，时间单位是毫秒
+  ReadTimeout: 8000
+  #两端连接所用的时间
+  ConnectTimeout: 8000
