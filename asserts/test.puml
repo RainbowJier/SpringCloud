@@ -1,0 +1,14 @@
+@startuml
+class MemberFeignController {
+- MemberFeignService memberFeignService
++ ResponseResult memberQuery()
+}
+
+
+interface MemberFeignService {
+~ ResponseResult memberQuery()
+}
+
+MemberFeignController -> MemberFeignService
+
+@enduml
