@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/E-Commerce-Center/eureka-server-9002/pom.xml" />
         <option value="$PROJECT_DIR$/E-Commerce-Center/member-opfeign-consumer-80/pom.xml" />
         <option value="$PROJECT_DIR$/E-Commerce-Center/member-openfeign-consumer-80/pom.xml" />
+        <option value="$PROJECT_DIR$/E-Commerce-Center/e-commerce-Gateway-20000/pom.xml" />
       </list>
     </option>
   </component>

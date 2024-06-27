@@ -1,0 +1,36 @@
+server:
+  port: 20000
+
+spring:
+  application:
+    name: e-commerce-Gateway-20000
+  main:
+    web-application-type: reactive
+  cloud:
+    gateway:
+      routes: #配置路由, 可以有多个路由配置
+        #路由的 ID，程序员自己写,要求唯一
+        - id: member_routh01
+          uri: http://localhost:10002
+          #匹配后提供服务的路由地址, 也可以是外网 uri,比如http://www.qq.com等uri: http://localhost:10002
+          #gateway 最终访问的 url = uri+Path 即: http://localhost:10002/member/provider/get/1
+          predicates:
+            - Path=/member/provider/get/** #断言,路径相匹配的进行路由
+            # saveMember 路由
+        - id: member_routh02
+          uri: http://localhost:10002
+          predicates:
+            - Path=/member/provider/saveMember/** #断言,路径相匹配的进行路由
+
+
+#Eureka Client
+eureka:
+  client:
+    # The default value is true, which means that the client will register with the eureka server.
+    register-with-eureka: true
+    # Get the service list from the eureka server.
+    # If the server is cluster mode, must configure the value with true.
+    fetch-registry: true
+    # Register self to eureka server cluster.
+    service-url:
+      defaultZone: http://eureka9001.com:9001/eureka/,http://eureka9002.com:9002/eureka/

@@ -20,6 +20,7 @@
         <module>eureka-server-9001</module>
         <module>eureka-server-9002</module>
         <module>member-openfeign-consumer-80</module>
+        <module>e-commerce-Gateway-20000</module>
     </modules>
 
     <!-- 版本属性 -->
