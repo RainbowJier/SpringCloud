@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: member-openfeign-consumer-80
+    name: member-openfeign-consumer
 
 # knife4j
 # address: http://localhost:9191/doc.html

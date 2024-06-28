@@ -6,9 +6,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
-// Set the module as eureka client.
 @EnableEurekaClient
-// Open Discovery
 @EnableDiscoveryClient
 public class ECommerceGateway20000Application {
 

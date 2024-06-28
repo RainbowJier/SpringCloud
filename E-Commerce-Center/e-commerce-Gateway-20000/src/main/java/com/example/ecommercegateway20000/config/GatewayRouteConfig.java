@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
  * @Date 2024/6/27
  */
 @Configuration
-public class GatewayConf {
+public class GatewayRouteConfig {
 
     //@Bean
     //public RouteLocator myRouteLocator01(RouteLocatorBuilder routeLocatorBuilder) {
