@@ -5,14 +5,24 @@ spring:
   application:
     name: member-openfeign-consumer
 
-# knife4j
+    # Zipkin
+    zipkin:
+      base-url: http://localhost:9411
+    # Sleuth
+    sleuth:
+      sampler:
+        #采样率在 0-1 之间，1 表示全部采集
+        probability: 1
+
+
+# Knife4j
 # address: http://localhost:9191/doc.html
 knife4j:
   enable: true
   setting:
     language: zh_cn
 
-#Eureka Client
+# Eureka Client
 eureka:
   client:
     # The default value is true, which means that the client will register with the eureka server.
@@ -23,13 +33,13 @@ eureka:
     service-url:
       defaultZone: http://eureka9001.com:9001/eureka/,http://eureka9002.com:9002/eureka/
 
-
-# 日志
+# OpenFeign日志
 logging:
   level:
     #对MemberFeignService 接口调用过程 打印的日志信息-debug级别
     com.example.memberopenfeignconsumer80.service.MemberFeignService: debug
 
+# OpenFeign 实现超时调用，设置请求等待时间。
 ribbon:
   #指的是建立连接后从服务器读取到可用资源所用的时间，时间单位是毫秒
   ReadTimeout: 8000

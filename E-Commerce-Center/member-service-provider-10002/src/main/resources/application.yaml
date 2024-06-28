@@ -4,8 +4,16 @@ server:
 spring:
   application:
     name: member-service-provider
+  # Zipkin
+  zipkin:
+    base-url: http://localhost:9411
+  # Sleuth
+  sleuth:
+    sampler:
+      #采样率在 0-1 之间，1 表示全部采集
+      probability: 1
 
-  #  data
+  # data
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     url: jdbc:mysql://localhost:3306/e_commerce_center_db?useUnicode=true&allowPublicKeyRetrieval=true&characterEncoding=utf-8&useSSL=false
@@ -13,14 +21,7 @@ spring:
     username: root
     password: root
 
-  #Swagger
-  # After Springboot 2.6 version, you need to configure ant_path_matcher to make swagger work properly(???).
-  # address: http://localhost:9191/swagger-ui/index.html
-  mvc:
-    path match:
-      matching-strategy: ant_path_matcher
-
-#MybatisPlus
+# MybatisPlus
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true  # map underscore
@@ -41,7 +42,7 @@ knife4j:
   setting:
     language: zh_cn
 
-#Eureka Client
+# Eureka Client
 eureka:
   client:
     # The default value is true, which means that the client will register with the eureka server.
@@ -52,8 +53,6 @@ eureka:
     # Register self to eureka server.
     service-url:
       defaultZone: http://eureka9001.com:9001/eureka/, http://eureka9002.com:9002/eureka/
-
-
 
 
 
