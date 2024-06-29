@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-29T05:06:44.968Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="cYPq1Bi_rQMCi-wEBL95" version="24.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-29T05:07:07.087Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="9DcuZLzWR7hx-hoRcGum" version="24.6.4" type="github">
   <diagram name="第 1 页" id="TnaWdXLzNJzU0-kOCl_u">
     <mxGraphModel dx="1449" dy="902" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -178,6 +178,14 @@
         </mxCell>
         <mxCell id="WgYL6O9STOkXiMQ_CdjH-6" value="服务网关" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-310" y="700" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WgYL6O9STOkXiMQ_CdjH-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.626;entryY=-0.027;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WgYL6O9STOkXiMQ_CdjH-5" target="fLhCOQXJ6kDsfGb4_A8b-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WgYL6O9STOkXiMQ_CdjH-8" value="拉去配置" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WgYL6O9STOkXiMQ_CdjH-7">
+          <mxGeometry x="-0.2057" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
