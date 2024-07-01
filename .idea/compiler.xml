@@ -10,24 +10,28 @@
         <module name="member-service-provider-10002" />
         <module name="member-service-provider-10000" />
         <module name="member-openfeign-consumer-80" />
+        <module name="member-service-nacos-consumer-80" />
         <module name="member-service-consumer-80" />
         <module name="eureka-server-9002" />
         <module name="eureka-server-9001" />
+        <module name="member-service-nacos-provider-10004" />
         <module name="e-commerce-Gateway-20000" />
+        <module name="member-service-nacos-provider-10006" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="demo" target="17" />
+      <module name="demo" target="1.8" />
       <module name="other" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="demo" options="-parameters" />
+      <module name="demo" options="" />
       <module name="e-commerce-Gateway-20000" options="" />
       <module name="eureka-server-9001" options="" />
       <module name="eureka-server-9002" options="" />
       <module name="member-service-consumer-80" options="" />
+      <module name="member-service-nacos-provider-10004" options="" />
       <module name="member-service-provider-10000" options="" />
       <module name="member-service-provider-10002" options="" />
       <module name="other" options="" />

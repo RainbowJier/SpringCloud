@@ -1,0 +1,39 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: member-service-nacos-consumer
+
+    # Zipkin
+    zipkin:
+      base-url: http://localhost:9411
+    # Sleuth
+    sleuth:
+      sampler:
+        #采样率在 0-1 之间，1 表示全部采集
+        probability: 1
+  # Nacos
+  cloud:
+    nacos:
+      discovery:
+        # 注册到Nacos
+        username: nacos
+        password: nacos
+        server-addr: localhost:8848
+
+# Nacos 配置暴露所有的监控点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+# Knife4j
+# address: http://localhost:80/doc.html
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
+

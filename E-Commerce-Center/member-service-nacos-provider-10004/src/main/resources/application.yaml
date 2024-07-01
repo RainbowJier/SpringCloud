@@ -1,0 +1,52 @@
+server:
+  port: 10004
+
+spring:
+  application:
+    name: member-service-nacos-provider
+
+  #  data
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/e_commerce_center_db?useUnicode=true&allowPublicKeyRetrieval=true&characterEncoding=utf-8&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  # Zipkin
+  zipkin:
+    base-url: http://localhost:9411
+  # Sleuth
+  sleuth:
+    sampler:
+      #采样率在 0-1 之间，1 表示全部采集
+      probability: 1
+  # Nacos
+  cloud:
+    nacos:
+      discovery:
+        # 注册到Nacos
+        username: nacos
+        password: nacos
+        server-addr: 127.0.0.1:8848
+# Nacos 配置暴露所有的监控点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+# knife4j
+# address: http://localhost:10004/doc.html
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
+
+#MybatisPlus
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true  # map underscore
+  global-config:
+    db-config:
+      id-type: auto  # Global id, if variable id don't have @TableId.
+      update-strategy: not_null # Just update not null value.
