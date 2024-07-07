@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 public class CustomizationBean {
 
     @Bean
-    @LoadBalanced  // 默认为轮询算法
+    @LoadBalanced
     public RestTemplate getRestTemplate() {
         return new RestTemplate();
     }

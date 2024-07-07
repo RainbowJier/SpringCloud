@@ -11,6 +11,7 @@
         <module name="member-service-provider-10000" />
         <module name="member-openfeign-consumer-80" />
         <module name="member-service-nacos-consumer-80" />
+        <module name="member-nacos-config-client-5000" />
         <module name="member-service-consumer-80" />
         <module name="eureka-server-9002" />
         <module name="eureka-server-9001" />

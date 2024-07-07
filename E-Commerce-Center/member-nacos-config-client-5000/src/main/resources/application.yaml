@@ -1,0 +1,5 @@
+spring:
+  profiles:
+    #Set different profiles, dev/text/prod
+    active: dev
+

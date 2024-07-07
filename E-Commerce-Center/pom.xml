@@ -14,10 +14,10 @@
 
     <!-- child modules 子模块定义 -->
     <modules>
-
         <module>member-service-consumer-80</module>
         <module>member-service-provider-10000</module>
         <module>member-service-provider-10002</module>
+        <module>member-nacos-config-client-5000</module>
         <module>member-service-nacos-consumer-80</module>
         <module>member-service-nacos-provider-10004</module>
         <module>member-service-nacos-provider-10006</module>
@@ -29,6 +29,8 @@
 
     <!-- 版本属性 -->
     <properties>
+        <spring-cloud.version>2020.0.5</spring-cloud.version>
+        <spring-cloud-alibaba.version>2021.0.1.0</spring-cloud-alibaba.version>
         <jwt.version>0.9.0</jwt.version>
         <spring-boot.version>2.5.0</spring-boot.version>
         <spring-dev.version>2.5.0</spring-dev.version>
@@ -53,7 +55,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>2020.0.5</version>
+                <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -62,7 +64,7 @@
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-                <version>2021.1</version>
+                <version>${spring-cloud-alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
